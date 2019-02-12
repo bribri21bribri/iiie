@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form" onsubmit="func();return false">
+      <label for="age">age</label>
+      <input type="number" id="age" name="age" /><br />
+      <label for="gender">gender</label>
+      <select name="gender" id="gender">
+        <option value="">Please Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option> </select
+      ><br />
+      <input type="submit" /><br />
+    </form>
+    <br /><br />
+
+    <div id="info"></div>
+
+    <script>
+      function func() {
+        var info = document.getElementById("info");
+        var age = document.form.age.value;
+        var gender = document.form.gender.value;
+
+        if (age >= 30 && gender === "female") {
+          info.innerHTML = "<h2>Welcome</h2>";
+        } else {
+          info.innerHTML = "<h2>Please leave</h2>";
+        }
+      }
+    </script>
+  </body>
+</html>

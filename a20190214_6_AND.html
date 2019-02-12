@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <div class="class">aa</div>
+    <div class="class">bb</div>
+    <div class="class">cc</div>
+    <script>
+      document.getElementById("output").innerHTML = "<h1>Heading</h1>";
+      document.getElementById("output").innerHTML += "<h2>subHeading</h2>";
+      //   document.getElementById("output").innerText += "<p>sfjso</p>";
+      console.log(document.getElementById("output").innerHTML);
+
+      var num = 5;
+      var num2 = num;
+      num2 = 4;
+      console.log(num);
+
+      var output = document.getElementById("output");
+      var el = output;
+
+      el.innerHTML = "<h1>HEADING</h1>";
+      console.log(output);
+
+      var classes = document.getElementsByClassName("class");
+      console.log(classes);
+    </script>
+  </body>
+</html>
