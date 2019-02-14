@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+  <input type="number" id="myinput" onkeyup="info.innerHTML='';"> <br>
+
+  <button onclick="doConvert()">convert</button>
+
+
+  <div id="info"></div>
+
+    <script>
+      const input = document.getElementById('myinput')
+      const info = document.getElementById('info')
+
+      function doConvert(){
+        let num = parseInt(input.value)
+        let numnum = num/10;
+        switch (numnum) {
+          case 10:
+          case 9:
+            info.innerHTML="A"
+            break;
+          case 8:
+            info.innerHTML="B"
+            break;
+          case 7:
+            info.innerHTML="C"
+            break;
+          case 6:
+            info.innerHTML="D"
+            break;
+          default:
+            info.innerHTML="F"
+
+        }
+
+
+      }
+
+    </script>
+  </body>
+</html>

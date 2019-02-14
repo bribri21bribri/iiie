@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+  <input type="number" id="myinput" onkeyup="info.innerHTML='';"> <br>
+
+  <button onclick="doConvert()">convert</button>
+
+
+  <div id="info"></div>
+
+    <script>
+      const input = document.getElementById('myinput')
+      const info = document.getElementById('info')
+
+      function doConvert(){
+        let num = parseInt(input.value)
+
+        if(num > 90){
+          info.innerText = 'A'
+        }else if(num > 80){
+          info.innerText= 'B'
+        }else if(num >70){
+          info.innerText ='C'
+        }else if(num >60){
+          info.innerText ='D'
+        }else{
+          info.innerText ='F'
+        }
+
+
+
+      }
+
+    </script>
+  </body>
+</html>
