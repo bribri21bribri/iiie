@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="info"></div>
+
+
+    <script>
+        const info = document.querySelector('#info')
+
+
+        for(var i = 1; i<=10; i++){
+            info.innerHTML += i +'<br>'
+        }
+        info.innerHTML += i+'----<br>';
+        for(let k = 1; k<=10; k++){
+            info.innerHTML += k +'<br>'
+        }
+        //info.innerHTML += i+'----<br>';//超出範圍(scope)無法使用
+
+
+        //exercise
+        for(let a = 2; a<=30; a+=2){
+            info.innerHTML += a +'<br>'
+        }
+        for(let b = 10; b>=1; b--){
+            info.innerHTML += b +'<br>'
+        }
+        for(let c = 57; c<=114; c+=3){
+            info.innerHTML += c +'<br>'
+        }
+        info.innerHTML += '------------------<br><br>'
+        for(let i = 65;i<=122 ; i++){
+            info.innerHTML += String.fromCharCode(i)+'<br>'
+        }
+        info.innerHTML += '------------------<br><br>'
+        for(let i = 0; i <10 ;i++){
+            info.innerHTML += 10-i+'<br>'
+
+        }
+    </script>
+
+</body>
+
+</html>
